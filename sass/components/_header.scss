@@ -1,0 +1,106 @@
+.header{
+    height : 95vh;
+    background-image:
+        linear-gradient(179.75deg, rgba(0, 0, 0, 0.30) 0.28%, 
+        rgba(0, 0, 0, 0.60) 100.3%),
+        url(../images/colorado-header.jpg);
+    background-size: cover;
+    background-position: top;
+    color:$color-light-text;
+
+    a{
+        color: $color-light-text;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        transition: all 0.3s ease 0s;
+    }
+    a:hover{
+        color: #CED9E0;
+    }
+
+    li{
+        display: inline-block;
+        padding: 0 3.2rem 0 0;
+    }
+
+    span{
+        color: $color-text-highlight;
+    }
+    &__navbar{
+        padding: 4rem;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-bottom: .1rem dotted  rgba(255, 255, 255, 0.3);
+        margin-bottom: 13rem;
+    }
+    &__logo-box{
+        position: absolute;
+        top: 3.2rem;
+        left: 4rem;
+    }
+
+    &__logo{
+        height: 2.4rem;
+    }
+    &__cover-cta{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    &__hero-info{
+        width: 372px;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
+        backface-visibility: hidden;
+        animation: moveRight 1s ease-out;
+    }
+    
+    &__hero-info h1{
+        margin-top: 1.6rem;
+        font-weight: 300;
+        /* animation: moveRight .5s ease-out;
+        backface-visibility: hidden; */
+    
+    }
+    
+    &__hero-info p{
+        margin-top: 1.6rem;
+        font-weight: 300;
+        /* animation: moveRight 1s ease-out;
+        backface-visibility: hidden; */
+    
+    }
+    
+    &__booking-form{
+        background-color: #fff;
+        color: #4F4F4F;
+        font-size: 1.6rem;
+        padding: 3.2rem;
+        border-radius: 4px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        animation: moveLeft 1s ease-out;
+        backface-visibility: hidden;
+    }
+    
+    &__booking-form h3{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: #3A2F1F;
+        font-size: 2.3rem;
+        margin-bottom: 3rem;
+        letter-spacing: 0px;
+    }    
+    &__trip-dates{
+        display: flex;
+        margin-bottom: 1.6rem;
+    }
+    
+    &__trip-dates--start-date {
+        margin-right: 1.6rem;
+    }   
+}
