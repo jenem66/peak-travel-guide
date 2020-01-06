@@ -9,30 +9,43 @@ input,select {
     margin-bottom: .6rem;
 }
 
-input[type=text] {
-    border-style: none;
-    width: 100%;
-    margin-bottom: 1.6rem;
+input{
+    &[type=text] {
+        border-style: none;
+        width: 100%;
+        margin-bottom: 1.6rem;
+    }
+    &:focus{
+        outline: none;
+    }
+    &[type="submit" i] {
+        color: #fff;
+        background-color: $color-primary;
+        padding: 1.8rem 4.8rem;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        align-items: flex-end;
+    }
+    label{
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
 }
 
 select {
     border-style: none;
     padding: 1rem;
+    
+    label{
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
 }
 
-input[type="submit" i] {
-    color: #fff;
-    background-color: $color-primary;
-    padding: 1.8rem 4.8rem;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    align-items: flex-end;
-}
-
-label, input label{
+label{
     display: inline-block;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }

@@ -14,10 +14,6 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5rem;
-  color: #4F4F4F;
 }
 
 .container {
@@ -98,6 +94,13 @@ h2 {
 h3 {
   font-size: 2.4rem;
   line-height: 2.7rem;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  color: #4F4F4F;
 }
 
 .header {
@@ -242,9 +245,8 @@ input[type=text] {
   margin-bottom: 1.6rem;
 }
 
-select {
-  border-style: none;
-  padding: 1rem;
+input:focus {
+  outline: none;
 }
 
 input[type="submit" i] {
@@ -261,8 +263,23 @@ input[type="submit" i] {
           align-items: flex-end;
 }
 
-label, input label {
+input label {
   display: inline-block;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+select {
+  border-style: none;
+  padding: 1rem;
+}
+
+select label {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
