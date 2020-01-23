@@ -1,0 +1,28 @@
+.features{
+    display: flex;
+    // height: 184px;
+}
+.features h2{
+    font-size: 2.3rem;
+}
+.feature-info{
+    display: flex;
+    width: 33.3%;
+    background-color:rgba(113, 147, 97, 0.8);;
+    padding: 4rem;
+
+    &:nth-child(2){
+        background-color: rgba(133, 158, 92, 0.8);;
+    }
+    &:last-child{
+        background-color: rgba(157, 181, 105, 0.8);;
+    }
+    img{
+        margin-right: 4.8rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+}
+
+
