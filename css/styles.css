@@ -18,7 +18,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
+  padding: 13.6rem 0;
 }
 
 @-webkit-keyframes moveRight {
@@ -89,6 +90,7 @@ h1 {
 h2 {
   font-size: 6rem;
   line-height: 6.4rem;
+  margin-bottom: 2.4rem;
 }
 
 h3 {
@@ -96,11 +98,10 @@ h3 {
   line-height: 2.7rem;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5rem;
-  color: #4F4F4F;
+p {
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 300;
 }
 
 a {
@@ -116,6 +117,17 @@ a {
 
 a:hover {
   color: #CED9E0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  color: #4F4F4F;
+}
+
+.u-center-text {
+  text-align: center;
 }
 
 .header {
@@ -190,6 +202,7 @@ a:hover {
 
 .header__hero-info p {
   margin-top: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 300;
   /* animation: moveRight 1s ease-out;
         backface-visibility: hidden; */
@@ -241,7 +254,7 @@ a:hover {
   margin-bottom: 1.8rem;
 }
 
-.feature-info {
+.feature__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,19 +263,19 @@ a:hover {
   padding: 4rem;
 }
 
-.feature-info:nth-child(2) {
+.feature__item:nth-child(2) {
   background-color: rgba(133, 158, 92, 0.8);
 }
 
-.feature-info:last-child {
+.feature__item:last-child {
   background-color: rgba(157, 181, 105, 0.8);
 }
 
-.feature-info img {
+.feature__item img {
   margin-right: 4.8rem;
 }
 
-.feature-info p {
+.feature__item p {
   margin-bottom: 2rem;
 }
 
@@ -318,5 +331,65 @@ select label {
 label {
   display: inline-block;
   margin-bottom: 1rem;
+}
+
+.section-info {
+  margin: 0 auto;
+  width: 74.5rem;
+}
+
+.featured-destinations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.featured-listing {
+  width: 269px;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+  margin-top: 6.4rem;
+}
+
+.featured-listing h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+  margin-bottom: .8rem;
+}
+
+.featured-listing .rating {
+  font-size: 1.6rem;
+}
+
+.featured-listing .rating img {
+  margin-right: .9rem;
+}
+
+.featured-listing .subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  line-height: 18px;
+}
+
+.featured-listing .listing-details {
+  padding: 2.4rem;
+  position: absolute;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.67)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%);
+  border-radius: 4px;
+}
+
+.featured-listing .listing-details p {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
