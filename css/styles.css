@@ -130,6 +130,18 @@ body {
   text-align: center;
 }
 
+.u-center {
+  margin: 0 auto;
+}
+
+.u-margin-top-64 {
+  margin-top: 6.4rem;
+}
+
+.u-margin-bottom-64 {
+  margin-bottom: 6.4rem;
+}
+
 .header {
   background-image: linear-gradient(179.75deg, rgba(0, 0, 0, 0.3) 0.28%, rgba(0, 0, 0, 0.6) 100.3%), url(../images/colorado-header.jpg);
   background-size: cover;
@@ -333,6 +345,49 @@ label {
   margin-bottom: 1rem;
 }
 
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 1.8rem 4.8rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #DF8317;
+}
+
+.btn-primary:hover {
+  background-color: #E98F26;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #7F9254;
+}
+
+.btn-secondary:hover {
+  background-color: #889D58;
+  color: #fff;
+}
+
+.btn-outline {
+  border: #fff 1px solid;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.089);
+  color: #fff;
+}
+
 .section-info {
   margin: 0 auto;
   width: 74.5rem;
@@ -391,5 +446,28 @@ label {
 
 .featured-listing .listing-details p {
   display: none;
+}
+
+.section-btn {
+  text-align: center;
+}
+
+.video-cover {
+  position: relative;
+}
+
+.play-btn img {
+  position: absolute;
+  margin: 0 auto;
+  top: 40%;
+  right: 50%;
+  background: #fff;
+  border-radius: 50%;
+  padding: 32px;
+  padding: 32px;
+}
+
+.play-btn img:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -6,6 +6,7 @@
 .featured-destinations{
     display: flex;
     justify-content: space-evenly;
+    // margin-bottom: 6.4rem;
 
 }
 
@@ -47,4 +48,31 @@
         border-radius: 4px;
     }
 
+}
+
+.section-btn {
+    text-align: center;
+}
+
+.video-cover{
+    position: relative;
+}
+
+.play-btn{
+}
+
+.play-btn img{
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    right: 50%;
+    background: #fff;
+    border-radius: 50%;
+    padding: 32px;
+    padding: 32px;
+    // border: 4px rgba(255, 255, 255, 0.137);
+
+    &:hover{
+        background-color:rgba(255, 255, 255, 0.9);
+    }
 }
